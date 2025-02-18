@@ -1,19 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { ProjectService } from '../project.service';
-import {Project} from '../models/project.model';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
+  imports: [],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit {
-  recentProjects: Project[] = [];
+export class HomeComponent {
 
-  constructor(private projectService: ProjectService) {}
-
-  ngOnInit() {
-    this.recentProjects = this.projectService.getProjects().slice(0, 2); // Zeigt nur die neuesten 2 Projekte an
-  }
 }
-
