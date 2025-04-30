@@ -45,6 +45,8 @@
 
 .tech-stack-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     text-decoration: none;
 }
 
