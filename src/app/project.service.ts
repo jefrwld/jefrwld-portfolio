@@ -11,7 +11,7 @@ export class ProjectService {
       title: 'Study Budy',
       description: 'Application which generates markdown content and a quiz game out of images of written notes by using LLM / OpenAI API',
       image: 'study.jpg',
-      github: '',
+      github: 'https://github.com/jefrwld/study-buddy-frontend/',
       technologies: ['Symfony', 'Angular', 'Docker', 'PHP', 'TypeScript', 'LLM']
     },
     {
@@ -19,7 +19,7 @@ export class ProjectService {
       description: 'Swipedia is a personalized knowledge discovery app that lets you swipe through Wikipedia articles, learning what you love by what you like.',
       image: 'swipedia.png',
       github: 'https://github.com/jefrwld/swipedia',
-      technologies: ['React', 'Node.js', 'MongoDB']
+      technologies: ['Angular', 'TypeScript']
     }
   ];
 

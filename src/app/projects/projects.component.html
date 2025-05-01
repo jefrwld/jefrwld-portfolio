@@ -7,12 +7,14 @@
       </div> 
       <h2 class="project-title">{{ project.title }}</h2>
       <p class="project-desc">{{ project.description }}</p>
-      <div class="git-link">
-        <a [href]="project.github">
-          <img class="git-img" src="github-mark.svg" alt="github link">
-        </a>
-        <span>see on github</span>
-      </div>
+
+      <a href="{{project.github}}">
+        <div class="git-link">
+            <img class="git-img" src="github-mark.svg" alt="github link">
+          <span>see on github</span>
+        </div>
+      </a>
+      
       <div class="tech-stack-list">
           <span *ngFor="let tech of project.technologies" class="technology">{{ tech }}</span> 
       </div>
