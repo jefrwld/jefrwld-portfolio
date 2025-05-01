@@ -1,5 +1,5 @@
 .main{
-    
+
 }
 
 
@@ -87,10 +87,15 @@
     .main-project-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
     }
 
     .project-card {
-        width: 100%;
+        width: 90%;
         margin-bottom: 50px;
+        padding: 5;
+        border: 3px solid black;
     }
 }

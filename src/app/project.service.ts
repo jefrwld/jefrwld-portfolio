@@ -15,10 +15,10 @@ export class ProjectService {
       technologies: ['Symfony', 'Angular', 'Docker', 'PHP', 'TypeScript', 'LLM']
     },
     {
-      title: 'E-Commerce Shop',
-      description: 'A modern e-commerce shop with a shopping cart and user authentication.',
-      image: 'shop.jpg',
-      github: '',
+      title: 'Swipedia',
+      description: 'Swipedia is a personalized knowledge discovery app that lets you swipe through Wikipedia articles, learning what you love by what you like.',
+      image: 'swipedia.png',
+      github: 'https://github.com/jefrwld/swipedia',
       technologies: ['React', 'Node.js', 'MongoDB']
     }
   ];
