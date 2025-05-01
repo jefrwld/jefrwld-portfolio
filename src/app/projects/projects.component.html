@@ -1,19 +1,21 @@
-<div class="main-project-container">
-  <div class="project-card" *ngFor="let project of projects">
-    <div class="project-image-wrapper">
-        <img class="project-image" [src]="project.image">
-    </div> 
-    <h2 class="project-title">{{ project.title }}</h2>
-    <p class="project-desc">{{ project.description }}</p>
-    <div class="git-link">
-      <a [href]="project.github">
-        <img class="git-img" src="github-mark.svg" alt="github link">
-      </a>
-      <span>see on github</span>
-    </div>
-    <div class="tech-stack-list">
-        <span *ngFor="let tech of project.technologies" class="technology">{{ tech }}</span> 
+<div class="main">
+  <app-nav-bar></app-nav-bar>
+  <div class="main-project-container">
+    <div class="project-card" *ngFor="let project of projects">
+      <div class="project-image-wrapper">
+          <img class="project-image" [src]="project.image">
+      </div> 
+      <h2 class="project-title">{{ project.title }}</h2>
+      <p class="project-desc">{{ project.description }}</p>
+      <div class="git-link">
+        <a [href]="project.github">
+          <img class="git-img" src="github-mark.svg" alt="github link">
+        </a>
+        <span>see on github</span>
+      </div>
+      <div class="tech-stack-list">
+          <span *ngFor="let tech of project.technologies" class="technology">{{ tech }}</span> 
+      </div>
     </div>
   </div>
 </div>
-

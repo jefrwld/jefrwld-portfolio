@@ -16,13 +16,7 @@ body {
 }
 
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-    border-bottom: 4px solid black;
-}
+
 
 
 .post-informations{
