@@ -13,6 +13,6 @@ import { NavBarComponent } from '../nav-bar/nav-bar.component';
 })
 export class HomeComponent {
 
-  recentProjects = ['Study Budy', 'Swipedia']; 
+  recentProjects = ['Study Budy', 'Swipedia', 'vibe-clip'];
 
 }
