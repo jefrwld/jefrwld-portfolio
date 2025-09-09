@@ -5,7 +5,7 @@ import {Project} from './models/project.model';
   providedIn: 'root'
 })
 export class ProjectService {
-  
+
   private projects: Project[] = [
     {
       title: 'Study Budy',
@@ -20,8 +20,17 @@ export class ProjectService {
       image: 'swipedia.png',
       github: 'https://github.com/jefrwld/swipedia',
       technologies: ['Angular', 'TypeScript']
+    },
+
+
+      {
+      title: 'vibe-clip',
+      description: 'A small CLI tool I developed while learning the basics of Rust. It observes the system clipboard and sanitizes critical & configured information so that sharing your code with strg v with an ai is no worry',
+      image: 'vibeclip.png',
+      github: 'https://github.com/jefrwld/vibe-clip',
+      technologies: ['Rust']
     }
-  ];
+  ]
 
   getProjects() {
     return this.projects;
