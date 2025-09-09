@@ -23,13 +23,13 @@ export class ProjectService {
     },
 
 
-      {
-      title: 'vibe-clip',
-      description: 'A small CLI tool I developed while learning the basics of Rust. It observes the system clipboard and sanitizes critical & configured information so that sharing your code with strg v with an ai is no worry',
-      image: 'vibeclip.png',
-      github: 'https://github.com/jefrwld/vibe-clip',
-      technologies: ['Rust']
-    }
+  {
+    title: 'vibe-clip',
+    description: 'A lightweight CLI tool built in Rust that monitors your system clipboard and automatically sanitizes sensitive information before sharing. Perfect for safely copying code snippets to AI assistants without worrying about accidentally exposing API keys, passwords, or other confidential data.',
+    image: 'vibe-clip.png', // Fixed: should match the project name
+    github: 'https://github.com/jefrwld/vibe-clip', // Fixed: should match the project name
+    technologies: ['Rust', 'CLI'] // Fixed: should reflect the actual technologies used
+  }
   ]
 
   getProjects() {
