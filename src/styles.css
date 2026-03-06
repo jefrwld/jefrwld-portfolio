@@ -2,10 +2,8 @@
     width: 60%;
     margin: 0 auto;
     font-family: monospace;
-    font-size: 16px;
     font-size: 18px;
     height: auto;
-
 }
 
 body {
@@ -23,6 +21,22 @@ body {
     margin-bottom: 50px
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.projects-intro {
+    font-size: 13px;
+    font-style: italic;
+    margin: 0 0 10px 0;
+    opacity: 0.7;
+}
+
 
 .interests {
     margin-bottom: 50px;
@@ -35,7 +49,8 @@ body {
 
 .start-section {
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
 }
 
 .about-me {
@@ -43,6 +58,7 @@ body {
     height: auto;
     padding: 10px;
     align-items: center;
+    margin-left: auto;
 }
 
 
@@ -51,7 +67,6 @@ body {
     height: auto;
     object-fit: contain;
     margin-top: 25px;
-    object-fit: contain;
 }
 
 .quote {
@@ -73,27 +88,52 @@ body {
 
 .left-block{
     width: 50%;
+    min-width: 0;
 }
 
 .right-block{
     width: 50%;
+    min-width: 0;
 }
 
+.tech-badge-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tech-badge-row {
+    display: flex;
+    gap: 8px;
+}
+
+.tech-badge {
+    padding: 3px 8px;
+    border: 2px solid black;
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.tech-badge:hover {
+    transform: translateY(-3px);
+    cursor: default;
+}
+
+.social-link,
 .git-link {
     width: fit-content;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 4px 8px;
     border: 3px solid black;
     display: flex;
     align-items: center;
+    gap: 6px;
     cursor: pointer;
     margin-bottom: 10px;
 }
 
+.social-link:hover,
 .git-link:hover {
     border: 3px solid rgb(0, 233, 27);
-    display: flex;
-    align-items: center;
 }
 
 .git-img {
@@ -102,94 +142,79 @@ body {
     margin: 5px;
 }
 
+.quote-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.section-quote{
+  width: 100%;
+}
 
 
 
-/* Mobile (480px and below) */
-@media (max-width: 500px) {
+
+/* Mobile */
+@media (max-width: 768px) {
 
     .main {
         width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
 
     .main-content {
         width: 100%;
     }
 
-    .start-section{
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 50px;
+    .start-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 30px;
     }
 
-    .second-section {
-        display: block;
+    .image-wrapper {
         width: 100%;
-        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 
-    .left-block{
-        width: 100%;
-    }
-
-    .right-block{
-        width: 100%;
+    .image {
+        width: 150px;
+        height: auto;
+        margin-top: 0;
     }
 
     .about-me {
         width: 100%;
-        padding: 0; 
-        margin-top: 50px;
-    }
-
-    .nav h1{
-        font-size: 20px;
-    }
-
-    .nav-links {
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    .nav-lins a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .image {
-        margin-top: 0px;
-    }
-
-    .image-wrapper {
-        display: flex;
-        justify-content: center;
-    }
-    .project-card {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .main-project-container {
-        width: 100%;
         padding: 0;
     }
 
-
-
-
-    /* Blog posts template mobile section */
-    .blog-posts {
-        margin-top: 50px;
-        font-size: 20px;
-
+    .second-section {
+        display: block;
     }
 
-    .blog-posts li {
-        padding: 10px;
+    .left-block,
+    .right-block {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
     }
 
+    .tech-badge-row {
+        flex-wrap: wrap;
+    }
 
+    .main-project-container {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
 
   }
 
