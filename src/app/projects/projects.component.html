@@ -3,20 +3,20 @@
   <div class="main-project-container">
     <div class="project-card" *ngFor="let project of projects">
       <div class="project-image-wrapper">
-          <img class="project-image" [src]="project.image">
-      </div> 
-      <h2 class="project-title">{{ project.title }}</h2>
-      <p class="project-desc">{{ project.description }}</p>
-
-      <a href="{{project.github}}">
-        <div class="git-link">
+        <img class="project-image" [src]="project.image">
+      </div>
+      <div class="project-content">
+        <h2 class="project-title">{{ project.title }}</h2>
+        <p class="project-desc">{{ project.description }}</p>
+        <a href="{{project.github}}" target="_blank">
+          <div class="git-link">
             <img class="git-img" src="github-mark.svg" alt="github link">
-          <span>see on github</span>
+            <span>see on github</span>
+          </div>
+        </a>
+        <div class="tech-stack-list">
+          <span *ngFor="let tech of project.technologies" class="technology">{{ tech }}</span>
         </div>
-      </a>
-      
-      <div class="tech-stack-list">
-          <span *ngFor="let tech of project.technologies" class="technology">{{ tech }}</span> 
       </div>
     </div>
   </div>
