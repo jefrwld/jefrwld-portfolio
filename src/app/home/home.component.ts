@@ -13,7 +13,7 @@ import { NavBarComponent } from '../nav-bar/nav-bar.component';
 })
 export class HomeComponent {
 
-  recentProjects = ['vibe-clip'];
+  recentProjects = ['rupomo', 'vibe-clip'];
 
   technologies = ['PHP', 'TypeScript', 'Rust', 'Nix', 'Angular', 'Symfony', 'Docker', 'GIT', 'VIM', 'MariaDB', 'Keycloak', 'Gitlab'];
 
